@@ -4,7 +4,7 @@
         height: 70vh;
     }
     
-    #form.show{
+    #form.show, #form1.show{
         width: 70%;
     }
 
@@ -174,7 +174,7 @@
         display: none;
     }
 
-    #form.show{
+    #form.show, form1.show{
         width: 80%;
     }
 
