@@ -70,7 +70,7 @@ h3{
 a{
     text-decoration: none;
     color: initial;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
 
 input{
@@ -153,7 +153,7 @@ button:hover{
         font-size: 1.2em;
     }
 
-    a{
+    p{
         font-size: var(--normal-p-font);
     }
 
