@@ -156,9 +156,9 @@ function linkPage(link){
 
 /*Sign Up */
 
-createAccount.onclick = function(){
-    UR L
-}
+// createAccount.onclick = function(){
+    
+// }
 
 
 
