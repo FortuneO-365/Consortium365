@@ -10,7 +10,7 @@ body{
     margin: 0;
     background-color: #ededed;
     overflow-x: hidden;
-    font-family: bahnschrift;
+    font-family: 'bahnschrift' , 'Roboto Condensed' , 'roboto medium';
 }
 
 :root{
