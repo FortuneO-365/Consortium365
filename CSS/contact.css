@@ -1,0 +1,177 @@
+
+:root{
+    --normal-p-font: 1em;
+    --normal-h2-font: 1.5em;
+    --normal-h1-font: 2em;
+    --normal-h3-font: 1.17em;
+}
+
+header nav ul li:nth-child(6){
+    background-color: #13cbd8;
+    border-radius: 10px 10px 0 0;
+}
+
+header nav ul li:nth-child(6) a{
+    color: rgb(111,77,77);
+}
+
+main{
+    display: block;
+}
+
+section{
+    position: relative;
+    min-height: calc(100vh - 19px);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#contact-info{
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background-color: white;
+    z-index: 1;
+}
+
+#contacts{
+    padding: 30px 50px 50px;
+}
+
+h3{
+    color: #13cbd8;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#contacts>div>p,#contacts>div>div{
+    padding-left: 20px;
+}
+
+#contacts>div>div{
+    margin: 5px 0;
+}
+
+#message-info{
+    width: 48%;
+    position: absolute;
+    top: 13%;
+    right: 15%;
+    background-color: #d3d3d3;
+    z-index: 2;
+    box-shadow: 5px 5px 1px #13cbd8;
+}
+
+#form-area{
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+    font-size: 1.2em;
+}
+
+input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    height: 30px;
+    width: 80%;
+    margin: 20px 10px 20px 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+input:hover, input:focus{
+    border-bottom: 2px solid #13cbd8;
+}
+
+textarea{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    width: 80%;
+    margin: 20px 10px 20px 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid;
+    background-color: rgba(255, 255, 255, 0.911);
+    resize: none;
+}
+
+textarea:hover, textarea:focus{
+    border-bottom: 2px solid #13cbd8;
+}
+
+button{
+    height: 30px;
+    width: 20%;
+    display: block;
+    margin: 20px auto;
+    padding-left: 0px;
+    font-size: 15px;
+    /* border-radius: 50px; */
+    background-color: #13cbd8;
+    color: rgb(111, 77, 77);
+    border: 1px solid #13cbd8;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #2be0ec;
+}
+
+#message-info label{
+    color: #6f4d4d;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1000px){
+    #message-info{
+        width: 60%;
+        top: 13%;
+        right: 5%;
+    }
+
+    #contact-info{
+        width: 50%;
+        top: 10%;
+        left: 5%;
+    }
+
+    #message-info label{
+        font-size: 1.2em;
+    }
+
+    a{
+        font-size: var(--normal-p-font);
+    }
+
+    h3{
+        font-size: var(--normal-h3-font);
+    }
+}
+
+@media screen and (max-width:750px){
+    #message-info{
+        position: initial;
+        width: 88%;
+        margin: 20px auto;
+    }
+
+    #contact-info{
+        position: initial;
+        width: 80%;
+        margin: auto;
+    }
+}

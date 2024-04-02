@@ -1,0 +1,162 @@
+
+:root{
+    --normal-p-font: 1em;
+    --normal-h2-font: 1.5em;
+    --normal-h1-font: 2em;
+    --normal-h3-font: 1.17em;
+}
+
+header nav ul li:nth-child(3){
+    background-color: #13cbd8;
+    border-radius: 10px 10px 0 0;
+}
+
+header nav ul li:nth-child(3) a{
+    color: rgb(111,77,77);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+main section{
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 15px;
+    background-color: #fff;
+}
+
+.subject{
+    width: 23%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-shadow: 1px 1px 1px color-mix(in srgb, black 10%, transparent 90%);
+    transition: box-shadow 400ms ease-in;
+}
+
+.subject:hover{
+    box-shadow: 0px 1px 5px black;
+}
+
+.s-cont{
+    padding: 10px 0;
+}
+
+/* .s-cont:hover .learn-more{
+    opacity: 1;
+    width: 100%;
+}
+
+.s-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.s-text:hover{
+    opacity: 0;
+}
+
+.learn-more{
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: color-mix(in srgb, transparent 70%, black 30%);
+    transition: opacity 400ms ease-in;
+} */
+
+
+.learn-more button{
+    padding: 5px 10px;
+    margin: 0 5%;
+    background-color: #13cbd8;
+    border: 2px solid #6f4d4d;
+    font-size: 15px;
+}
+
+.s-text p{
+    width: 90%;
+    margin: 10px auto;
+    /* padding: 0; */
+    align-self: flex-start;
+    padding-left: 7px;
+    font-size: 1.2em;
+}
+
+.subject img{
+    width: 96%;
+    margin-top: 5px;
+    transition: all 300ms ease-in;
+}
+
+.subject:hover img{
+    width: 100%;
+    margin-top: 0;
+}
+
+.subject h3{
+    width: 90%;
+    margin: 10px auto;
+    padding-left: 7px;
+    font-size: 1.3em;
+    transition: font-size 1s;
+    align-self: flex-start;
+    color: #13cbd8;
+}
+
+
+@media screen and (max-width:1000px){
+    .subject{
+        width: 31%;
+    }
+
+    .subject h3{
+        font-size: var(--normal-h3-font);
+    }
+
+    .subject div p{
+        font-size: var(--normal-p-font);
+    }
+}
+
+@media screen and (max-width:700px){
+    main section{
+        padding: 30px;
+        width: 100%;
+    }
+
+    .subject{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:542px){
+    main section{
+        /* padding-top: 170px;
+        position: relative;
+        margin-top: 150px; */
+    }
+    .subject{
+        width: 70%;
+        position: relative;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+}

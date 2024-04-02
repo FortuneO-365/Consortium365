@@ -1,0 +1,474 @@
+/*************************************
+HEADER AND ROOTS
+**************************************/
+:root{
+    --normal-p-font: 1em;
+    --normal-h2-font: 1.5em;
+    --normal-h1-font: 2em;
+    --normal-h3-font: 1.17em;
+}
+
+header nav ul li:nth-child(1){
+    background-color: #13cbd8;
+    border-radius: 10px 10px 0 0;
+}
+
+header nav ul li:nth-child(1) a{
+    color: rgb(111,77,77);
+}
+
+/*************************************
+FULL BODY
+**************************************/
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+
+main section{
+    width: 100%;
+}
+
+/*************************************
+NAV AND MAIN CONTAINER
+**************************************/
+
+#nav-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-container div{
+    text-align: center;
+    width: 50%;
+    background-color: #fff;
+}
+
+#nav-container div.active{
+    animation: color 300ms ease-in-out;
+    background-color: #13cbd8;
+    color: rgb(111,77,77);
+}
+
+#nav-container div h2{
+    font-size: 1.8em;
+}
+
+#nav-container div.active h2{
+    font-size: 2em;
+}
+
+#main-container{
+    background-color: #fff;
+    min-height: 70vh;
+}
+
+#design, #learn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.img{
+    width: 30%;
+    margin: 0 5%;
+}
+
+.img img{
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.other{
+    width: 60%;
+    text-align: left;
+}
+
+.other h2{
+    font-size: 1.7em;
+}
+
+.other p{
+    font-size: 1.2em;
+}
+
+#design div, #learn div{
+    display: none;
+}
+
+#design.visible div ,#learn.visible div{
+    display: block;
+    animation: show 500ms ease-in-out;
+}
+
+#main-container div h2{
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+#main-container div p{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#main-container div button{
+    padding: 5px 10px;
+    margin: 0 15%;
+    background-color: #13cbd8;
+    border: 2px solid #6f4d4d;
+    font-size: 15px;
+}
+
+button a{
+    text-decoration: none;
+    color: #6f4d4d;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1em;
+}
+
+#main-container div button:hover{
+    background-color: #48e9f4;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes color{
+    from{
+        background-color: #fff;
+        color: rgb(0,0,0);opacity: 0;
+    }
+    to{
+        background-color: #13cbd8;
+        color: rgb(111,77,77);
+    }
+}
+
+/*************************************
+COURSES SECTION
+**************************************/
+
+#courses{
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #f8f8f8;
+}
+
+#courses div h2{
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    padding-top: 20px;
+}
+
+#subject-container{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Cont{
+    width: 68%;
+    /* min-height: 76vh; */
+    max-height: 80vh;
+    /* height: auto; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 5px solid #136268;
+    aspect-ratio: 3/2;
+}
+
+.subject{
+    animation: slider 15s ease infinite;
+    /* display: flex; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.subject img{
+    width: 100%;
+    height: 100%;
+    /* max-height: 450px; */
+    transition: all 0.5ms ease;
+}
+
+
+.subject div{
+    background-color: white;
+    /* height: 50%; */
+}
+
+.subject .subject-text{
+    display: none;
+    transition: display 10s ease;
+}
+
+.subject:hover .subject-text{
+    background-color: color-mix(in srgb, transparent 30%, gray 70%);
+    width: 80%;
+    height: 100%;
+    padding: 0 10%;
+    /* height: 50%; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    inset: 0 0 0 0;
+}
+
+#subject1{
+    margin-left: 0;
+}
+
+#subject2{
+    margin-left: 100%;
+}
+
+#subject3{
+    margin-left: 200%;
+}
+
+#subject4{
+    margin-left: 300%;
+}
+
+#subject5{
+    margin-left: 400%;
+}
+
+
+#subject-cont-text{
+    text-align: center;
+}
+
+#subject-cont-text p{
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#subject-cont-text a{
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #6f4d4d;
+}
+
+#subject-cont-text a:hover{
+    color: #136268
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.spana{
+    height: 10px;
+    width: 10px;
+    border: 1px solid #136268;
+    border-radius: 50%;
+}
+
+.spana.active{
+    background-color: #136268;
+}
+
+/*************************************
+ANIMATIONS
+**************************************/
+
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    18%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    38%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    58%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    78%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    98%{
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/*************************************
+MEDIA QUERIES
+**************************************/
+
+@media screen and (max-width:542px){
+    body{
+        overflow-x: hidden;
+    }
+
+    header nav ul li:nth-child(1){
+        border-radius: 0;
+    }
+
+    main{
+        display: block;
+    }
+
+    main section{
+        width: 100%;
+    }
+
+    #nav-container div{
+        border-top: 2px solid;
+        width: 100%;
+    }
+
+    #Design-button{
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    #Learn-button{
+        display: none
+    }
+
+    #Design-button.active{
+        /* transform: translateX(0); */
+        animation: left 600ms ease-in-out;
+        width: 100%;
+        /* visibility: visible; */
+        display: block;
+    }
+
+    #Learn-button.active{
+        /* transform: translateX(-100%); */
+        animation: right 300ms ease-in-out;
+        width: 100%;
+        display: block;
+    }
+
+    .img img{
+        display: none;
+    }
+
+    #design, #learn{
+        display: block;
+    }
+
+    #design div, #learn div{
+        width: 100%;
+    }
+
+    #design div h2, #learn div h2{
+        width: 80%;
+    }
+
+    #design div p, #learn div p{
+        width: 80%;
+    }
+
+    #subject-container{
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    /* @keyframes left {
+        0%{
+            transform: translateX(-100%);
+            display: block;
+        }
+        1%{
+            transform: translateX(-100%);
+        }
+        3%{
+            transform: translateX(0);
+        }
+        97%{
+            transform: translateX(0);
+        }
+        99%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(-100%);  
+            display: none;
+        }
+    }
+
+    @keyframes right {
+        0%{
+            transform: translateX(0%);
+            display: block;
+        }
+        1%{
+            transform: translateX(0%);
+        }
+        3%{
+            transform: translateX(-100%);
+        }
+        97%{
+            transform: translateX(-100%);
+        }
+        99%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(0%);
+            display: none;
+        }
+    } */
+
+}
+
+@media screen and (max-width:1000px){
+    .other p{
+        font-size: var(--normal-p-font);
+    }
+
+    .other h2{
+        font-size: var(--normal-h2-font);
+    }
+
+    #subject-cont-text a, #subject-cont-text p{
+        font-size: var(--normal-p-font);
+    }
+}

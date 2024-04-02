@@ -1,0 +1,164 @@
+:root{
+    --normal-p-font: 1em;
+    --normal-h2-font: 1.5em;
+    --normal-h1-font: 2em;
+    --normal-h3-font: 1.17em;
+}
+
+header nav ul li:nth-child(2){
+    background-color: #13cbd8;
+    border-radius: 10px 10px 0 0;
+}
+
+header nav ul li:nth-child(2) a{
+    color: rgb(111,77,77);
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#background-image{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /* transform: translate(-50% -50%); */
+}
+
+#background-image img{
+    width: 100%;
+}
+
+.main-talk.main{
+    display: block;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 56%;
+    padding: 20px;
+    position: absolute;
+    top: 22%;
+    right: 5%;
+    /* border: 2px solid; */
+    box-shadow: 8px 8px 0.5px #13cbd8;
+    z-index: 1;
+}
+
+.main-talk{
+    display: none;
+}
+
+.main-talk.main h2{
+    margin: 5% auto;
+    width: 70%;
+    color: #13cbd8;
+    animation: hide 9s forwards ease;
+    font-size: 1.7em;
+}
+
+.main-talk.main p{
+    width: 70%;
+    animation: hide 9s forwards ease;
+    margin: 5% auto 10%;
+    font-size: 1.2em;
+}
+
+.main-talk.main button{
+    padding: 5px 10px;
+    margin: 0 15% 5%;
+    background-color: #13cbd8;
+    border: 2px solid #6f4d4d;
+    animation: up 9s forwards ease;
+    font-size: 1.1em;
+    position: relative;
+}
+
+@keyframes hide{
+    0%{
+        opacity: 0;
+        /* filter: blur(2px); */
+    }
+    4%{
+        opacity: 1;
+        /* filter: blur(0px); */
+    }
+    96%{
+        opacity: 1;
+        /* filter: blur(0px); */
+    }
+    100%{
+        opacity: 0;
+        /* filter: blur(2px); */
+    }
+}
+
+@keyframes up{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    6%{
+        opacity: 1;
+        top: 0px;
+    }
+    94%{
+        opacity: 1;
+        top: 0px;
+    }
+    100%{
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+
+@media screen and (max-width:540px){
+
+    header nav ul li:nth-child(2){
+        border-radius: 0;
+    }       
+
+    main section{
+        background-image: url(../IMAGES/IMG_1436.JPG);
+    }
+
+    .main-talk.main{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #background-image{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        z-index: -19;
+    }
+
+    .main-talk.main{
+        top: 50%;
+        left: 50%;
+        /* filter: blur(2px); */
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        opacity: 1;
+    }
+
+    .main-talk.main h2{
+        font-size: var(--normal-h2-font);
+    }
+
+    .main-talk.main p, .main-talk.main button{
+        /* filter: blur(2px); */
+        font-size: var(--normal-p-font);
+    }
+}
