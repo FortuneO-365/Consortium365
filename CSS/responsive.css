@@ -1,4 +1,8 @@
 @media screen and (max-width:768px){
+
+    header{
+        height: 70vh;
+    }
     
     #form.show{
         width: 70%;
@@ -9,12 +13,32 @@
         justify-content: left;
     }
 
+    footer #da #Site{
+        width: 25%;
+        font-size: calc(var(--normal-h3-font) + 10px);
+    }
+
     footer #da div{
         width: 18%;
+        padding-left: 15px;
     }
+
 }
 
 @media screen and (max-width:542px){
+
+    header #header-container .header-text{
+        margin: 10vh 15px;
+        padding: 0;
+    }
+
+    header #header-container .header-text h1{
+        font-size: 30px;
+    }
+
+    header #header-container .header-text h3{
+        font-size: 12px;
+    }
 
     header nav{
         background-color: #deffffe2
@@ -158,10 +182,23 @@
         display: inline-block;
     }
 
-    footer #da div{
-        width: 21%;
+    footer #da #Site{
+        width: 27%;
+        font-size: calc(var(--normal-h3-font) + 5px);
     }
 
+    footer #da div{
+        width: 22%;
+        padding-left: 15px;
+    }
+
+    footer #db{
+        display: block;
+    }
+
+    footer #db p{
+        text-align: right;
+    }
 
     @keyframes top {
         from{
