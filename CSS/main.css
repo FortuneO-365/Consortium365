@@ -132,13 +132,13 @@ header #header-container .header-text h3{
 }
 
 #form1.show{
-    min-height: 82vh;
-    margin-top: 60px;
+    min-height: 84vh;
+    margin-top: 50px;
 }
 
 #form1.show.error1{
     min-height: 88vh;
-    margin-top: 50px;
+    margin-top: 40px;
     height: auto;
     /* max-height: 90vh; */
 }
