@@ -10,7 +10,7 @@ body{
     margin: 0;
     background-color: #ededed;
     overflow-x: hidden;
-    font-family: 'bahnschrift' , 'Roboto Condensed' , 'roboto medium';
+    font-family: 'bahnschrift' , 'Roboto Medium' , 'Roboto Condensed';
 }
 
 :root{
@@ -127,6 +127,10 @@ header #header-container .header-text h3{
     box-shadow: 0, 2px, 0, 2px;
 }
 
+#form.show.error1{
+    min-height: 410px;     
+}
+
 #form1.show{
     min-height: 82vh;
     margin-top: 60px;
@@ -233,7 +237,7 @@ header #header-container .header-text h3{
 footer{
     background-color: #d1d1d1;
     color: rgb(50, 50, 50);
-    font-family: calibri;
+    font-family: 'calibri' , 'bahnschrift' , 'Roboto Medium' , 'Roboto Condensed';
 }
 
 footer p{
