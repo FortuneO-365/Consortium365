@@ -175,3 +175,10 @@ button:hover{
         margin: auto;
     }
 }
+
+@media screen and (max-width:542px){
+    header nav ul li:nth-child(6){
+        border-radius: 0;
+    }
+}
+
