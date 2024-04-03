@@ -174,8 +174,12 @@
         display: none;
     }
 
-    #form.show, form1.show{
+    #form.show{
         width: 80%;
+    }
+
+    #form1.show{
+        width: 88%;
     }
 
     #form .bottom{
