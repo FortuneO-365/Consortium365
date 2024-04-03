@@ -17,12 +17,16 @@ main aside{
 
 
 
-@media screen and (max-width:540px){
+@media screen and (max-width:542px){
     main{
         display: block;
     }
 
     main section{
         width: 100%;
+    }
+
+    header nav ul li:nth-child(6){
+        border-radius: 0;
     }
 }
